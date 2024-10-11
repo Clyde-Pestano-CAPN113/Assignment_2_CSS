@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>title</title>
+    <nav>
+        <button onclick="OpenMainSideBar()">OpensideBar</button>
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+    </nav>
+</head>
+<link rel="stylesheet" href="Css_Styling.css">
+
+<main>
+    <body>
+        <!--Creating the side div-->
+        <div id = "SideBar" class="sidebar">
+            <div class="closeit" onclick="CloseMainSideBar()"></div>
+            <div><a href="Home"></a></div>
+            <div>Internships</div>
+        </div>
+        <!--Main body-->
+        <section>
+            <header><h1><u>Want to work in construction, you went to the right place</u></h1></header>
+            <footer>
+                <p>Jalen Pestano</p>
+                <p>n01703718@humber.ca</p>
+            </footer>
+            <img src="https://www.prepareforcanada.com/wp-content/uploads/ContructionWorker-Featured.jpg" alt="">
+            <header><h1><u>Jobs that we are offering</u></h1></header>
+            <p>Here are some of the job offerings that we have</p>
+        </section>
+        <section>
+            <h3><u>Plumer</u></h3>
+            <img src="https://media.gettyimages.com/id/1516511531/photo/a-plumber-carefully-fixes-a-leak-in-a-sink-using-a-wrench.jpg?s=612x612&w=gi&k=20&c=qP23dEvXnm7ffCrwwZdDpWunzI3NRGV6vQfDW-f_cMM=" height="500px" width="600" alt="">
+            <p>As plumer you lay out, assmble, instal, and maintain componets that are for the disposal of water </p>
+
+            <h3><u>Bricklayer</u></h3>
+            <img src="https://www.careersinconstruction.ca/sites/default/files/styles/career_banner/public/images/careers/istock_000007494102large-low.jpg?itok=gUM894cS" height="500px" width="600" alt="">
+            <p>as a bricklayer your job is to lay pre-cut stone and concreate blocks in a mortar to construct or repair buildings</p>
+
+            <h3><u>Electricain</u></h3>
+            <img src="https://hiring-assets.careerbuilder.com/media/attachments/careerbuilder-original-3580.jpg?1511294086" height="500px" width="600">
+            <p>Your job as an electricain is to inspect eletrical systems, fix wiring faults, test, repair, and maintain electrical equipment, and more</p>
+        </section>
+    </body>
+    <script>
+    //Open and closes main sidebar using the button i created with the div with the class closeit to activate it 
+    function OpenMainSideBar(){
+        document.getElementById("SideBar").style.width = "250px";
+    }  
+    function CloseMainSideBar(){
+        document.getElementById("SideBar").style.width = "0";
+    }
+    </script>
+</main>
+
+</html>
